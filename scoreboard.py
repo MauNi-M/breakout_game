@@ -1,0 +1,2 @@
+class ScoreBoard(object):
+    pass

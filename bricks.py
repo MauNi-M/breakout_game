@@ -1,0 +1,2 @@
+class BrickBoard(object):
+    pass
