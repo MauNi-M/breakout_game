@@ -33,9 +33,9 @@ middle_part = (
     (-10.0, -40.0)
 )
 
-new_left = tuple([tuple([y, x - 40]) for y, x in left_half_circle])
+new_left = tuple([tuple([y, x - 60]) for y, x in left_half_circle])
 
-new_right = tuple([tuple([y, x + 40]) for y, x in right_half_circle])
+new_right = tuple([tuple([y, x + 60]) for y, x in right_half_circle])
 
 s.addcomponent(middle_part, "black", "black")
 s.addcomponent(new_left, "white", "black")
