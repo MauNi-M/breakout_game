@@ -9,7 +9,6 @@ class Paddle(Turtle):
         self.paddle_width = 80
         self.body_xpos = 0
         self.body_ypos = -250
-        self.paddle_boundary = self.body_ypos + 20
         self.paddle_shape_maker()
         # body
         self.shape("myshape")
@@ -17,6 +16,9 @@ class Paddle(Turtle):
         self.color("white", "white")
         self.penup()
         self.setposition(x=self.body_xpos, y=self.body_ypos)
+
+    def current_boundaries(self):
+        return ((self.xcor()-self.paddle_width-5, self.body_ypos+10), (self.xcor()+self.paddle_width+5, self.body_ypos+10))
 
     def move_paddle(self, x_pos):
         if -320 < x_pos < 320:

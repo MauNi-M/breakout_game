@@ -1,3 +1,4 @@
+import random
 from turtle import *
 
 
@@ -5,12 +6,8 @@ class BreakOutBall(Turtle):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        # boundries
-        self.upper_boundary = 280
-        self.right_boundary = 380
-        self.left_boundary = -380
-        self.lower_boundary = -230
-
+        # attribute
+        self.radius = 12
         # initial position
         self.body_x_pos = 0
         self.body_y_pos = -230
